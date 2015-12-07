@@ -1,1 +1,1 @@
-{"root":"app/public","base":"app/public/javascripts/minimal_app","parent":"../app.js","router":"ui.router","name":" ","appName":"minimalApp","jsFolder":"app/public/javascripts"}
+{"root":"app/public","base":"app/public/javascripts/yearbookApp","parent":"../app.js","router":"ui.router","name":"App","appName":"yearbookApp","jsFolder":"app/public/javascripts"}

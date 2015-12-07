@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app='yearbookApp'>
+<head>
+  <title>App</title>
+  <link rel='stylesheet' type='text/css' href='app/public/stylesheets/css/style.css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel='stylesheet' type='text/css' href='app/public/stylesheets/app.min.css'>
+
+  <script type='text/javascript' src='./app/public/components/jquery/dist/jquery.min.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular-messages.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/auth0/angular-jwt/master/dist/angular-jwt.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-resource.min.js"></script>
+  <script type='text/javascript' src='./app/public/javascripts/yearbookApp/app.js'></script>
+  <script type='text/javascript' src='./app/public/javascripts/yearbookApp/controllers/usersController.js'></script>
+
+
+</head>
+<body ng-controller="usersControllers as users">
+  <header ng-include="'app/public/views/shared/header.html'"></header>
+  <main class='container' ui-view>
+    {{ users }}
+  </main>
+  <footer class='container' ng-include="'app/public/views/shared/footer.html'"></footer>
+</body>
+</html>
